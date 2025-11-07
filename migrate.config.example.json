@@ -1,0 +1,43 @@
+{
+  "paths": {
+    "projectRoot": ".",
+    "emergentClone": "emergent-clone",
+    "target": "src"
+  },
+  "features": {
+    "convertToTsx": true,
+    "applyPrettier": true,
+    "applyESLint": false,
+    "createBackup": true,
+    "cleanOldFiles": false,
+    "parallelProcessing": true
+  },
+  "options": {
+    "maxParallelOps": 5,
+    "skipExisting": true,
+    "dryRun": false,
+    "verbose": false,
+    "oldFileDays": 30
+  },
+  "patterns": {
+    "ignore": [
+      "node_modules",
+      ".git",
+      ".next",
+      "dist",
+      "build",
+      ".env",
+      "*.log"
+    ],
+    "componentsToMigrate": [
+      "sections",
+      "layout",
+      "ui"
+    ],
+    "mocksToMigrate": [
+      "*.js",
+      "*.ts",
+      "*.json"
+    ]
+  }
+}
